@@ -91,19 +91,19 @@ static void __init msm8974_early_memory(void)
 #ifdef CONFIG_BRICKED_THERMAL
 static struct msm_thermal_data msm_thermal_pdata = {
 	.sensor_id = 0,
-	.poll_ms = 400,
-	.shutdown_temp = 94,
+	.poll_ms = 300,//400
+	.shutdown_temp = 91,//94
 
-	.allowed_max_high = 90,
-	.allowed_max_low = 86,
+	.allowed_max_high = 86,//90
+	.allowed_max_low = 82,//86
 	.allowed_max_freq = 300000,
 
-	.allowed_mid_high = 87,
-	.allowed_mid_low = 82,
+	.allowed_mid_high = 83,//87
+	.allowed_mid_low = 78,//82
 	.allowed_mid_freq = 960000,
 
-	.allowed_low_high = 85,
-	.allowed_low_low = 79,
+	.allowed_low_high = 80,//85
+	.allowed_low_low = 75,//79
 	.allowed_low_freq = 1728000,
 };
 #endif
